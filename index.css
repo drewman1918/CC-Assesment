@@ -1,0 +1,64 @@
+body{
+    background: lightblue;
+}
+
+.modal{
+    background: #fff;
+    width: 300px;
+    padding: 0px 20px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    position: fixed;
+    right: 10px;
+    bottom: -100%;
+    transition: ease-in-out 1s bottom;
+}
+
+.slideIn{
+    bottom: 0px;
+}
+
+#modalClose{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.modal > h3{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.modal > input {
+    border: 2px solid green;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc( 60% - 20px );
+    font-size: 16px;
+    outline: none;
+}
+
+.modal > button{
+    border: 2px solid green;
+    padding: 10px;
+    border-radius: 5px;
+    color: green;
+    width: calc( 40% - 20px );
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+
+.modal > h5{
+    position: relative;
+    top: -74px;
+    left: 10px;
+    background: #fff;
+    padding: 0px 10px;
+    float: left;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
